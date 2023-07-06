@@ -8,7 +8,7 @@
 .ajax-progress-throbber .throbber {
   display: inline;
   padding: 1px 6px 2px;
-  background: transparent url(/core/misc/throbber-active.gif) no-repeat 0 center;
+  background: transparent url(/assets/core/misc/throbber-active.gif) no-repeat 0 center;
 }
 .ajax-progress-throbber .message {
   display: inline;
@@ -31,7 +31,7 @@ tr .ajax-progress-throbber .throbber {
   opacity: 0.9;
   border-radius: 7px;
   background-color: #232323;
-  background-image: url(/core/misc/loading-small.gif);
+  background-image: url(/assets/core/misc/loading-small.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -63,7 +63,7 @@ tr .ajax-progress-throbber .throbber {
   margin-left: auto;
 }
 .js input.form-autocomplete {
-  background-image: url(/core/misc/throbber-inactive.png);
+  background-image: url(/assets/core/misc/throbber-inactive.png);
   background-repeat: no-repeat;
   background-position: 100% center;
 }
@@ -71,7 +71,7 @@ tr .ajax-progress-throbber .throbber {
   background-position: 0% center;
 }
 .js input.form-autocomplete.ui-autocomplete-loading {
-  background-image: url(/core/misc/throbber-active.gif);
+  background-image: url(/assets/core/misc/throbber-active.gif);
   background-position: 100% center;
 }
 .js[dir="rtl"] input.form-autocomplete.ui-autocomplete-loading {
@@ -242,13 +242,13 @@ table.sticky-header {
   background-size: 16px;
 }
 .system-status-counter__status-icon--error:before {
-  background-image: url(/core/misc/icons/e32700/error.svg);
+  background-image: url(/assets/core/misc/error.svg);
 }
 .system-status-counter__status-icon--warning:before {
-  background-image: url(/core/misc/icons/e29700/warning.svg);
+  background-image: url(/assets/core/misc/warning.svg);
 }
 .system-status-counter__status-icon--checked:before {
-  background-image: url(/core/misc/icons/73b355/check.svg);
+  background-image: url(/assets/core/misc/check.svg);
 }
 .system-status-report-counters__item {
   width: 100%;
@@ -316,8 +316,8 @@ a.tabledrag-handle .handle {
   margin: -0.4em 0.5em 0;
   padding: 0.42em 0.5em;
   background: #787878;
-  -webkit-mask: url(/core/misc/icons/787878/move.svg) no-repeat 6px 7px;
-  mask: url(/core/misc/icons/787878/move.svg) no-repeat 6px 7px;
+  -webkit-mask: url(/assets/core/misc/move.svg) no-repeat 6px 7px;
+  mask: url(/assets/core/misc/move.svg) no-repeat 6px 7px;
 }
 a.tabledrag-handle:hover .handle,
 a.tabledrag-handle:focus .handle {
@@ -376,23 +376,23 @@ a.tabledrag-handle:focus .handle {
   background-size: 100%;
 }
 .tablesort--asc {
-  background-image: url(/core/misc/icons/787878/twistie-down.svg);
+  background-image: url(/assets/core/misc/twistie-down.svg);
 }
 .tablesort--desc {
-  background-image: url(/core/misc/icons/787878/twistie-up.svg);
+  background-image: url(/assets/core/misc/twistie-up.svg);
 }
 div.tree-child {
-  background: url(/core/misc/tree.png) no-repeat 11px center;
+  background: url(/assets/core/misc/tree.png) no-repeat 11px center;
 }
 div.tree-child-last {
-  background: url(/core/misc/tree-bottom.png) no-repeat 11px center;
+  background: url(/assets/core/misc/tree-bottom.png) no-repeat 11px center;
 }
 [dir="rtl"] div.tree-child,
 [dir="rtl"] div.tree-child-last {
   background-position: -65px center;
 }
 div.tree-child-horizontal {
-  background: url(/core/misc/tree.png) no-repeat -11px center;
+  background: url(/assets/core/misc/tree.png) no-repeat -11px center;
 }
 .select2-container {
   box-sizing: border-box;
@@ -1088,7 +1088,7 @@ div.tree-child-horizontal {
   box-shadow: -8px 0 0 #e62600;
 }
 #sliding-popup {
-  background: url(/modules/contrib/eu_cookie_compliance/images/gradient.png)
+  background: url(/assets/core/misc/gradient.png)
     center center scroll repeat-y transparent;
 }
 .sliding-popup-bottom,
@@ -1296,7 +1296,7 @@ div.tree-child-horizontal {
   transform: translate(-50%, -100%) scaleY(-1);
 }
 .eu-cookie-compliance-close-button {
-  background: url(/modules/contrib/eu_cookie_compliance/images/close.png);
+  background: url(/assets/core/misc/close.png);
   width: 24px;
   height: 24px;
   border-width: 0;
@@ -1666,10 +1666,10 @@ body:not(.eu-cookie-compliance-popup-open) .eu-cookie-compliance-close-button {
   float: right;
 }
 #vlizimisfp .imis-authors::before {
-  background-image: url(/modules/custom/imisfp/images/person.svg);
+  background-image: url(/assets/core/misc/person.svg);
 }
 #vlizimisfp .imis-pubdate::before {
-  background-image: url(/modules/custom/imisfp/images/calendar.svg);
+  background-image: url(/assets/core/misc/calendar.svg);
 }
 #vlizimisfp .imis-authors::before,
 #vlizimisfp .imis-pubdate::before {
@@ -2241,7 +2241,7 @@ hr.animated {
 }
 .vliziframeswapper:not(.hasbgimg) span::before {
   content: "";
-  background: url(/modules/custom/vlizoverwrites/images/privacyshield.png);
+  background: url(/assets/core/misc/privacyshield.png);
   width: 128px;
   height: 128px;
   display: block;
@@ -2367,7 +2367,7 @@ a.cke_dialog_ui_button:active {
 .share42init a {
   width: 48px !important;
   height: 48px !important;
-  background: url(/modules/custom/vlizshare42/images/share-Fave.png) !important;
+  background: url(/assets/core/misc/share-Fave.png) !important;
   background-position: center center !important;
   display: block !important;
 }
@@ -2376,22 +2376,22 @@ a.cke_dialog_ui_button:active {
   transition: linear;
 }
 .share42init a.lnkd {
-  background: url(/modules/custom/vlizshare42/images/share-LinkedIn.png) !important;
+  background: url(/assets/core/misc/share-LinkedIn.png) !important;
 }
 .share42init a.fb {
-  background: url(/modules/custom/vlizshare42/images/share-Facebook.png) !important;
+  background: url(/assets/core/misc/share-Facebook.png) !important;
 }
 .share42init a.gplus {
   display: none !important;
 }
 .share42init a.twi {
-  background: url(/modules/custom/vlizshare42/images/share-Twitter.png) !important;
+  background: url(/assets/core/misc/share-Twitter.png) !important;
 }
 .share42init a.mailto {
-  background: url(/modules/custom/vlizshare42/images/share-Mailto.png) !important;
+  background: url(/assets/core/misc/share-Mailto.png) !important;
 }
 .share42init a.print {
-  background: url(/modules/custom/vlizshare42/images/share-Print.png) !important;
+  background: url(/assets/core/misc/share-Print.png) !important;
 }
 .rsssocialbutton {
   float: left;
@@ -2402,7 +2402,7 @@ a.cke_dialog_ui_button:active {
 }
 .rsssocialbutton a {
   display: block;
-  background: url(/modules/custom/vlizshare42/images/share-RSS.png) !important;
+  background: url(/assets/core/misc/share-RSS.png) !important;
   height: 48px;
   width: 48px;
   background-position: center center !important;

@@ -7365,7 +7365,7 @@ form[class*="user-"] .fieldgroup .fieldset-legend,
   }
   .paragraph--type--basic-text.text-add-swoosh:before {
     content: "";
-    background: url(/sites/vliz.be/themes/vlizbase/images/swoosh.svg) no-repeat
+    background: url(/assets/core/misc/swoosh.svg) no-repeat
       0 0;
     background-size: contain;
     display: block;
@@ -9693,7 +9693,7 @@ header {
   }
 }
 body.vliz-enable-background-waves main {
-  background: url(/sites/vliz.be/themes/vlizbase/images/swoosh_bg.svg) no-repeat
+  background: url(/assets/core/misc/swoosh_bg.svg) no-repeat
     center center;
   background-attachment: fixed;
   background-size: 90% auto;
@@ -9733,7 +9733,7 @@ body.vliz-enable-background-waves main {
   min-width: 400px;
 }
 #vlizimisfp .simplesearch {
-  background-image: url(/sites/vliz.be/themes/vlizbase/images/bib_publications_bg.jpg);
+  background-image: url(/assets/core/misc/bib_publications_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
