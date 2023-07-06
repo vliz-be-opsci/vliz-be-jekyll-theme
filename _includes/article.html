@@ -1,0 +1,32 @@
+<div class="views-row">
+    <article role="article" about="{{article.link}}"
+        class="node node--type-news node--promoted node--view-mode-teaser">
+        <div class="node__content">
+            <div class="before">
+                <a href="{{ article.link }}"
+                    hreflang="nl" target="_blank"> <img loading="lazy"
+                        src="{{ article.image }}"
+                        width="600" height="450" alt="{{ article.title }}"
+                        title="{{article.title}}" typeof="foaf:Image"
+                        class="image-style-medium-cropped" />
+                </a>
+            </div>
+            <div class="main">
+                <div class="main-inner">
+                    {% for tag in article.tags %}
+                    <a href="#" class="field__news_teaser">{{tag}}</a>
+                    {% endfor %}
+                    <h3>
+                        <a href="{{ article.link }}"
+                            hreflang="nl" target="_blank"><span
+                                class="field field--name-title field--type-string field--label-hidden">{{article.title}}</span>
+                        </a>
+                    </h3>
+                    <div class="node-date">
+                        {{article.date}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
