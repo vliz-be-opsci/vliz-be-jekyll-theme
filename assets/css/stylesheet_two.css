@@ -6729,7 +6729,7 @@ a.more-link:after,
 .view > .more-link a:after,
 .view > .more-link-colored a:after,
 a.more-link-colored:after {
-  content: "â€”";
+  content: "-";
   margin-left: 5px;
 }
 a.more-link:before,
