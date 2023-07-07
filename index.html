@@ -540,7 +540,6 @@ layout: default
       </div>
 
     </header>
-
     <section class="main-container-above">
       <div class="region region-content-above">
         <div id="block-vlizsearch" class="block block-vliz-helpers block-vliz-search-block">
@@ -592,7 +591,6 @@ layout: default
       </div>
 
     </section>
-
     <main role="main">
       <div class="main-container">
         <a id="main-content" tabindex="-1"></a>
@@ -610,79 +608,21 @@ layout: default
 
               </div>
               <div id="block-vlizbase-content" class="block block-system block-system-main-block">
-
-
                 <article role="article" about="/nl/homepage" typeof="schema:WebPage"
                   class="node node--type-page node--view-mode-full">
-
-
                   <span property="schema:name" content="Homepage" class="hidden"></span>
-
-
-
                   <div class="node__content">
-
                     <div
                       class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden">
-
-
                       <div class="row field__items">
                         <div class="col-12 field__item">
-                          <div class="paragraph paragraph--type--hero paragraph--view-mode--default">
-                            <div class="hero-container">
-
-                              <div
-                                class="field field--name-field-media field--type-entity-reference field--label-hidden field__items">
-                                <article class="media media--type-video media--view-mode-hero">
-
-
-                                  <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="480">
-                                    <source src="/sites/vliz.be/files/2023-06/Homepage_website_SimonStevin.mp4"
-                                      type="video/mp4" />
-                                  </video>
-
-                                </article>
-
-                              </div>
-                              <div
-                                class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__items">
-                                <div class="field__item">
-                                  <h2>Vlaams
-                                    Instituut
-                                    voor de Zee
-                                  </h2>
-
-                                  <p>Het Vlaams
-                                    Instituut
-                                    voor de Zee
-                                    staat voor
-                                    degelijk
-                                    interdisciplinair
-                                    onderzoek
-                                    van de
-                                    oceaan,
-                                    zeeën, kust
-                                    en estuaria.
-                                  </p>
-
-                                  <p><a class="more-link" href="/nl/wie-we-zijn/over-vliz">MEER
-                                      OVER
-                                      VLIZ</a>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 field__item">
                           <div
-                            class="container-negative-offset paragraph paragraph--type--from-library paragraph--view-mode--default">
-
-
+                            class="paragraph paragraph--type--from-library paragraph--view-mode--default">
+                            {% if site.data.main_banner %}
+                            {% include main_banner.html main_banner=site.data.main_banner %}
+                            {% endif %}
                             <div
                               class="field field--name-paragraphs field--type-entity-reference-revisions field--label-hidden">
-
-
                               <div>
                                 <div class="field__item">
                                   <div class="paragraph paragraph--type--container paragraph--view-mode--default">
@@ -2271,18 +2211,12 @@ layout: default
                           </div>
                         </div>
                       </div>
-
                     </div>
-
                   </div>
-
                 </article>
-
               </div>
-
             </div>
           </div>
-
           <div class="region region-content-below">
             <div id="block-share42" class="block block-vlizshare42">
 
@@ -2291,11 +2225,9 @@ layout: default
             </div>
 
           </div>
-
         </div>
       </div>
     </main>
-
     <footer>
       <div class="region region-footer">
         <div id="block-footerparagraphs"
@@ -2608,7 +2540,6 @@ layout: default
       </div>
 
     </footer>
-
     <div class="region region-mobile-overlay">
       <nav role="navigation" aria-labelledby="block-hoofdnavigatie-5-menu" id="block-hoofdnavigatie-5"
         class="mobile-main-navigation">
@@ -3032,7 +2963,5 @@ layout: default
       </div>
 
     </div>
-
-
   </div>
 </div>
