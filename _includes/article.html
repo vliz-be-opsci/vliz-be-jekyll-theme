@@ -5,7 +5,11 @@
             <div class="before">
                 <a href="{{ article.link }}"
                     hreflang="nl" target="_blank"> <img loading="lazy"
+                        {% if article.image contains 'http' %}
                         src="{{ article.image }}"
+                        {% else %}
+                        src="{{ site.baseurl }}{{ article.image }}"
+                        {% endif %}
                         width="600" height="450" alt="{{ article.title }}"
                         title="{{article.title}}" typeof="foaf:Image"
                         class="image-style-medium-cropped" />

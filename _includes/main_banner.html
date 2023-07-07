@@ -4,25 +4,40 @@
 
         <div
           class="field field--name-field-media field--type-entity-reference field--label-hidden field__items">
-          
           <article class="media media--type-video media--view-mode-hero">
             {% if site.data.main_banner.banner_media contains '.mp4' %}
-            <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="480">
-              <source src="{{ site.data.main_banner.banner_media }}" type="video/mp4" />
-            </video>
+                {% if site.data.main_banner.banner_media contains 'http' %}
+                <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="480">
+                <source src="{{ site.data.main_banner.banner_media }}" type="video/mp4" />
+                </video>
+                {% else %}
+                <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="480">
+                <source src="{{ site.baseurl }}{{ site.data.main_banner.banner_media }}" type="video/mp4" />
+                </video>
+                {% endif %}
             {% else %}
-            <img 
-                loading="lazy"
-                src="{{ site.data.main_banner.banner_media }}"
-                width="640" height="480" alt="{{ site.data.main_banner.title}}"
-                title="{{ site.data.main_banner.title}}" typeof="foaf:Image"
-                class="image-style-medium-cropped"
-            />
+                {% if site.data.main_banner.banner_media contains 'http' %}
+                <img 
+                    loading="lazy"
+                    src="{{ site.data.main_banner.banner_media }}"
+                    width="640" height="480" alt="{{ site.data.main_banner.title}}"
+                    title="{{ site.data.main_banner.title}}" typeof="foaf:Image"
+                    class="image-style-medium-cropped"
+                />
+                {% else %}
+                <img 
+                    loading="lazy"
+                    src="{{ site.baseurl }}{{ site.data.main_banner.banner_media }}"
+                    width="640" height="480" alt="{{ site.data.main_banner.title}}"
+                    title="{{ site.data.main_banner.title}}" typeof="foaf:Image"
+                    class="image-style-medium-cropped"
+                />
+                {% endif %}
             {% endif %}
           </article>
         </div>
         <div
-          class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__items">
+          class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__items grayoverlay">
           <div class="field__item">
             <h2>{{ site.data.main_banner.title}}</h2>
             <p>{{ site.data.main_banner.description }} </p>

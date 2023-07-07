@@ -1,7 +1,7 @@
 <div class="attachment attachment-before">
     <div class="views-element-container">
         <div
-            class="view-news-promoted-first view view-news view-id-news view-display-id-attachment_1 js-view-dom-id-4462a858190cd19c8beba94ccab2089614d7487380de5d75043f5260cc06b2a2">
+            class="view-news-promoted-first view view-news view-id-news view-display-id-attachment_1">
             <div class="view-content">
                 <div class="views-row">
                     <article role="article" about="{{ article.link }}"
@@ -11,7 +11,11 @@
                                 <a href="{{ article.link }}" hreflang="nl"
                                     target="_blank">
                                     <img loading="lazy"
+                                        {% if article.image contains 'http' %}
                                         src="{{ article.image }}"
+                                        {% else %}
+                                        src="{{ site.baseurl }}{{ article.image }}"
+                                        {% endif %}
                                         width="1000" height="562" alt="{{ article.title }}"
                                         title="{{ article.title }}" typeof="foaf:Image"
                                         class="image-style-large-cropped-16-9" />
