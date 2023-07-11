@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr"
     prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+
 <head>
     <meta charset="utf-8" />
     <noscript>
@@ -79,9 +80,54 @@
     <script src="{{ site.base_uri }}/assets/js/brands.js" defer crossorigin="anonymous"></script>
     <script src="{{ site.base_uri }}/assets/js/fontawesome-icons.js" defer crossorigin="anonymous"></script>
 </head>
+
 <body
     class="node9293 node--type-page role-anonymous vliz-disable-page-title vliz-disable-breadcrumb vliz-enable-background-waves layout-no-sidebars path-frontpage page-node-type-page">
-    {{content}}
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+        Skip and go to main content
+    </a>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+        <div class="layout-container">
+            {%- include navigation/main.html -%}
+            <main role="main">
+                <div class="main-container">
+                    <a id="main-content" tabindex="-1"></a>
+                    <div class="layout-content">
+                        <div class="region region-content">
+                            <div class="region-content-inner">
+                                <div id="block-vlizbase-page-title" class="block block-core block-page-title-block">
+                                    <h1 class="page-title"><span property="schema:name"
+                                            class="field field--name-title field--type-string field--label-hidden">Homepage</span>
+                                    </h1>
+                                </div>
+                                <div id="block-vlizbase-content" class="block block-system block-system-main-block">
+                                    <article role="article" about="/nl/homepage" typeof="schema:WebPage"
+                                        class="node node--type-page node--view-mode-full">
+                                        <span property="schema:name" content="Homepage" class="hidden"></span>
+                                        <div class="node__content">
+                                            <div
+                                                class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden">
+                                                <div class="row field__items">
+                                                    {{content}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="region region-content-below">
+                            <div id="block-share42" class="block block-vlizshare42">
+                                <div class="share42init"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            {%- include footer/main.html -%}
+            {%- include mobile-overlay/main.html -%}
+        </div>
+    </div>
     <noscript><img style="position: absolute"
             src="https://piwik.vliz.be/js/?action_name=Homepage&amp;idsite=1&amp;rec=1&amp;url=https%3A//vliz.be/nl"
             width="0" height="0" alt="" loading="lazy" typeof="foaf:Image" />
@@ -95,4 +141,5 @@
     <script src="/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.min.js?v=9.5.8" defer></script>
     <script src="{{ site.base_uri }}/assets/js/script_three.js"></script>
 </body>
+
 </html>
