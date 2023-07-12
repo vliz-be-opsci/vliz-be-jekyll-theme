@@ -8,7 +8,7 @@
             {% if item.image contains 'http' %}
             src="{{item.image}}"
             {% else %}
-            src="{{ site.baseurl }}{{item.image}}"
+            src="{{ site.baseurl }}/{{item.image}}"
             {% endif %}
             {% else %}
             src="{{ site.baseurl }}/assets/media/img/placeholder.png"

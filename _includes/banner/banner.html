@@ -12,7 +12,7 @@
                 </video>
                 {% else %}
                 <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="480">
-                <source src="{{ site.baseurl }}{{ media_object }}" type="video/mp4" />
+                <source src="{{ site.baseurl }}/{{ media_object }}" type="video/mp4" />
                 </video>
                 {% endif %}
             {% else %}
@@ -27,7 +27,7 @@
                 {% else %}
                 <img 
                     loading="lazy"
-                    src="{{ site.baseurl }}{{ media_object }}"
+                    src="{{ site.baseurl }}/{{ media_object }}"
                     width="640" height="480" alt="{{ banner.title}}"
                     title="{{ banner.title}}" typeof="foaf:Image"
                     class="image-style-medium-cropped"

@@ -8,7 +8,7 @@
                         {% if card.image contains 'http' %}
                         src="{{ card.image }}"
                         {% else %}
-                        src="{{ site.baseurl }}{{ card.image }}"
+                        src="{{ site.baseurl }}/{{ card.image }}"
                         {% endif %}
                         width="600" height="450" alt="{{ card.title }}"
                         title="{{card.title}}" typeof="foaf:Image"

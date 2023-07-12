@@ -7,7 +7,7 @@
             {% if topic.image contains 'http'%}
             src="{{ topic.image }}"
             {% else %}
-            src="{{ site.baseurl }}{{ topic.image }}"
+            src="{{ site.baseurl }}/{{ topic.image }}"
             {% endif %}
             width="600" height="450" alt="{{topic.title}}" typeof="Image"
             class="image-style-medium-cropped" /></a>
