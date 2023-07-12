@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "vliz-be-theme"
-  spec.version       = "0.2.0"
+  spec.version       = "0.3.0"
   spec.authors       = ["cedricdcc"]
   spec.email         = ["30471340+cedricdcc@users.noreply.github.com"]
 
