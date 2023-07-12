@@ -8,10 +8,10 @@
             {% if item.image contains 'http' %}
             src="{{item.image}}"
             {% else %}
-            src="{{ site.baseurl }}/{{item.image}}"
+            src="{{ site.baseurl }}{{item.image}}"
             {% endif %}
             {% else %}
-            src="{{ site.baseurl }}/assets/media/img/placeholder.png"
+            src="{{ site.baseurl }}assets/media/img/placeholder.png"
             {% endif %}
             width="600" height="450" alt="{{item.description}}" typeof="Image"
             class="image-style-medium-cropped" /></a>
