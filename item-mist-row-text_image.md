@@ -30,6 +30,7 @@ projects:
       their design and sustainable availability.
     clickthrough_url: https://www.fairease.eu/
     image: "/assets/media/img/placeholder.png"
+    text_col_width: 10
     tags:
       - EOSC-Association
       - EU

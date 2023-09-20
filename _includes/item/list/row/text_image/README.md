@@ -11,7 +11,7 @@ This component is a row of items with a text and an image.
 | `items.clickthrough_url` | Item url | String | `null` |
 | `items.image` | Item image | String | `null` |
 | `items.description` | Item description | String | `null` |
-| `items.width_media` | Image width | String | `null` |
+| `item.text_col_width` | Column width of the text column (out of 12) | Integer | `9` |
 
 
 #### Example with options
@@ -47,6 +47,7 @@ projects:
       their design and sustainable availability.
     clickthrough_url: https://www.fairease.eu/
     image: "/assets/media/img/placeholder.png"
+    text_col_width: 10
     tags:
       - EOSC-Association
       - EU

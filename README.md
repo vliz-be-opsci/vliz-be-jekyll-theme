@@ -5,25 +5,49 @@ It is mirrored of the [vliz.be](https://www.vliz.be) website.
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+First Rust and Ruby must be installed.
 
-```ruby
-gem "vliz-be-theme"
+### Rust
+
+To install Rust go to [Rust](https://www.rust-lang.org/tools/install).
+
+### Ruby
+
+To install Ruby go to [Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+
+### Jekyll
+
+To install Jekyll run the following command:
+
+```bash
+gem install jekyll bundler
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+### Fetch and install the vliz-be-theme Gem
 
-```yaml
-theme: vliz-be-theme
+To fetch and install the vliz-be-theme Gem run the following command:
+
+```bash
+gem fetch vliz-be-theme
 ```
 
-And then execute:[README]
+To install the vliz-be-theme Gem run the following command:
 
-    $ bundle
+```bash
+gem unpack vliz-be-theme-X.gem
+```
 
-Or install it yourself as:
+The X is the version number of the vliz-be-theme Gem.
 
-    $ gem install vliz-be-theme
+### Bundle install the vliz-be-theme Gem
+
+To bundle install the vliz-be-theme Gem run the following command:
+
+```bash
+cd vliz-be-theme-X
+bundle install
+```
+
 
 ## Usage
 
@@ -55,7 +79,7 @@ To view the page run the following command:
 bundle exec jekyll serve --livereload
 ```
 
-This will start a server on localhost:4000
+This will start a server on [localhost:4000](http://localhost:4000).
 
 To add a new page create a new file in the root of your project and add the following code:
 
