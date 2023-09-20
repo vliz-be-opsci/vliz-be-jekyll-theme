@@ -3,7 +3,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-base_uri: "https://open-science.vliz.be/vliz-be-jekyll-theme/" # Base URI for your site, e.g. http://example.com/test-repo/ => for development leave empty for gh-pages fill in the name of the repo of not the main gh-pages repo
+base_url: "https://open-science.vliz.be/vliz-be-jekyll-theme/" # Base URI for your site, e.g. http://example.com/test-repo/ => for development leave empty for gh-pages fill in the name of the repo of not the main gh-pages repo
 title: "vliz-be jekyll theme" # Title of your site
 social_media:
   - name: "twitter"
