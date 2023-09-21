@@ -95,11 +95,6 @@ The layout is the layout of the page. The layout is located in the _layouts fold
 For more information about layouts go to [Jekyll](https://jekyllrb.com/docs/layouts/).
 For more information about the jekyll api go to [Jekyll liquid documentation](https://jekyllrb.com/docs/liquid/).
 
-
-### _includes
-
-The following includes are available:
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/vliz-be-opsci/vliz-be-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
