@@ -5,11 +5,7 @@ It is mirrored of the [vliz.be](https://www.vliz.be) website.
 
 ## Installation
 
-First Rust and Ruby must be installed.
-
-### Rust
-
-To install Rust go to [Rust](https://www.rust-lang.org/tools/install).
+First Ruby must be installed.
 
 ### Ruby
 
